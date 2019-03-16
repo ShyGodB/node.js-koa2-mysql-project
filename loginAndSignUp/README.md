@@ -1,7 +1,7 @@
 # node.js-koa2-mysql-project
 A small project written using node.js,koa2 and mysql 
 
-**method of use**
+**method of use:**
 Open the terminal, CD to your target directory, and use the following command to clone the repository to your local directory:
 
 > git clone https://github.com/ShyGodB/node.js-koa2-mysql-project.git
