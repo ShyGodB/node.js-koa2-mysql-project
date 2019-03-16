@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Change The Web Color</title>
+
+		<style>
+			button,body {
+				margin: 0;
+			}
+			body {
+				background-color: #B0C4DE;
+			}
+			button {
+				border-width: 3px;
+				border-radius: 10px;
+				text-align: center;
+			}
+			#homePage{
+				text-align: right;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div id="homePage">
+			<button type="button" id="btn1" onclick="changeColor1()">玫瑰棕</button>
+			<button type="button" id="btn2" onclick="changeColor2()">天空蓝</button>
+			<button type="button" id="btn3" onclick="changeColor3()">简约青</button>
+			<button type="button" id="btn4" onclick="changeColor4()">象牙白</button>
+			<button type="button" id="btn5" onclick="changeColor5()">秋麒麟</button>
+			<button type="button" id="btn6" onclick="changeColor6()">紫罗兰</button>
+		</div>
+		<h1>
+		 	 <%- title %>
+		</h1>
+
+		<ul class="list-group">
+		  	<% elements.forEach(element => { %>
+		  		<li class="list-group-item">
+			  		<%= element.id %> 
+			    	<%= element.name %>
+			    	<a href="/delete?id=<%= element.id %>">Delete</a>
+		  		</li>
+		  	<% }) %>
+		</ul>
+
+		<script>
+			function changeColor1() {
+				document.body.style.backgroundColor = "#708090";
+			}
+			function changeColor2() {
+				document.body.style.backgroundColor = "#87CEEB";
+			}
+			function changeColor3() {
+				document.body.style.backgroundColor = "#00FFFF";
+			}
+			function changeColor4() {
+				document.body.style.backgroundColor = "#FFFFF0";
+			}
+			function changeColor5() {
+				document.body.style.backgroundColor = "#DAA520";
+			}
+			function changeColor6() {
+				document.body.style.backgroundColor = "#EE82EE";
+			}
+		</script>
+	</body>
+</html>
